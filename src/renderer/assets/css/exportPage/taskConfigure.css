@@ -1,0 +1,402 @@
+/*任务配置页面样式*/
+/*头部*/
+.taskConfigure-head{
+	width:100%;
+	height:32px;
+	line-height: 32px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.taskConfigure-head .back{
+	position: relative;
+	padding: 0 16px 0 24px;
+	color: #1890ff;
+}
+.taskConfigure-head .back:hover{
+	cursor: pointer;
+	color:#0b64d8;
+}
+.taskConfigure-head .back::before{
+	content: "";
+	width:1px;
+	height:15px;
+	background: #c1c2c2;
+	position: absolute;
+	top:3px;
+	right:0;
+}
+.taskConfigure-head .taskConfigure-title{
+	padding: 0 10px;
+}
+.taskConfigure-main{
+	height:600px;
+}
+.taskConfigure-content{
+	width:100%;
+	padding: 20px 58px;
+	padding-top:0;
+}
+.taskConfigure-tips{
+    position: relative;
+	color:#333;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-bottom: 12px;
+    border-left: 5px solid #1890ff;
+    padding: 0px 10px 1px 10px;
+    background: #fff;
+}
+/*任务*/
+.task-group{
+	margin: 14px 0;
+}
+.task-group .task-list-name{
+	display: inline-block;
+	width:100px;
+	text-align: right;
+}
+.task-group .task-group-input{
+	display: inline-block;
+	position: relative;
+	width:85%;
+}
+.task-group-input input,.task-group-input select,.task-group-input .task-group-textarea {
+	width:100%;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 4px;
+	padding: 2px 10px 0 10px;
+	border: solid 1px #d9d9d9;
+   /* -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;*/
+}
+/*.task-group-input input:focus,.task-group-input select:focus,.task-group-input .task-group-textarea:focus{
+	border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}*/
+/*采集网站*/
+.task-group-input input.web-name{
+	width:30%;
+}
+.task-group-input input.web-address{
+	width:65.7%;
+}
+.group-input-del{
+	display: inline-block;
+	width:16px;
+	height:16px;
+	background: url(../../img/icon_delete.png) center center no-repeat;
+	vertical-align: middle;
+	position: absolute;
+	top:9px;
+	right:-20px;
+}
+.group-input-del:hover{
+	cursor: pointer;
+	background: url(../../img/icon_delete_hover.png) center center no-repeat;
+}
+.group-input-line{
+	padding: 0 2px;
+}
+.collection-web-add{
+	width: 85%;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 4px;
+	text-align: center;
+	border: 1px dashed  #d9d9d9;
+	margin-left: 103px;
+	color:#666;
+}
+.collection-web-add:hover{
+	color:#1792ff;
+	border-color: #1792ff;
+	cursor: pointer;
+}
+/*采集字段*/
+.group-input-tips{
+	color:#1890ff;
+	padding-left: 4px;
+    position: absolute;
+    top:35px;
+    right:-52px;
+}
+.group-input-tips:hover{
+	cursor: pointer;
+	color: #0b64d8;
+}
+.collection-field-content .task-list-name{
+	vertical-align: top;
+	margin-top: 12px;
+}
+.collection-field-content .el-select .el-input__icon{
+	display: none;
+}
+.taskConfigure-table-box{
+	width:100%;
+    /*
+	max-height: 320px;
+    */
+	padding-bottom: 10px;
+    /*
+	overflow: auto;
+    */
+}
+.collection-field-table{
+	width:100%;
+	table-layout: fixed;
+}
+.collection-field-table thead{
+	height:40px;
+	line-height: 40px;
+	background: #ededed;
+}
+.collection-field-table thead tr th{
+	text-align: left;
+	padding: 0 20px;
+}
+.collection-field-table tbody tr{
+	height:44px;
+	line-height: 44px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.collection-field-table tbody tr td{
+	text-align:left;
+	padding: 0 20px;
+}
+.collection-field-table thead tr th.field-table-title{
+	width: 96px;
+}
+.collection-field-table tbody tr td.field-table-title{
+	width: 96px;
+	color:#999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.collection-field-table thead tr th.field-table-type,.collection-field-table tbody tr td.field-table-type,.collection-field-table tbody tr td.field-table-type input,.collection-field-table tbody tr td.field-table-type span {
+	width: 98px;
+}
+.collection-field-table thead tr th.field-table-name,.collection-field-table tbody tr td.field-table-name,.collection-field-table tbody tr td.field-table-name input,.collection-field-table tbody tr td.field-table-name span{
+	width: 110px;
+}
+.collection-field-table thead tr th.field-table-name{
+	width: 125px;
+}
+.collection-field-table thead tr th.field-table-number,.collection-field-table tbody tr td.field-table-number,.collection-field-table tbody tr td.field-table-number input,.collection-field-table tbody tr td.field-table-number span{
+	width: 68px;
+}
+.collection-field-table thead tr th.field-table-tips,.collection-field-table tbody tr td.field-table-tips,.collection-field-table tbody tr td.field-table-tips input,.collection-field-table tbody tr td.field-table-tips span{
+	width: 72px;
+}
+.fidld-table-th{
+	padding: 2px 10px 0 10px;
+}
+.field-table-name{
+    position:relative;
+}
+.field-table-name:hover .icon-close{
+    display: inline-block;
+}
+.field-table-name .icon-close{
+    position:absolute;
+    right:55px;
+    top:16px;
+    color:#c0c4cc;
+    cursor: pointer;
+    display: none;
+}
+.field-table-name .icon-close:hover{
+    color:#1890ff;
+}
+.collection-field-table tbody tr td input{
+	text-align: left;
+	border:1px solid transparent;
+}
+.collection-field-table tbody tr td input:hover{
+	border:1px solid #d9d9dd;
+}
+/*.collection-field-table tbody tr td input:focus{
+	border: 1px solid #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}*/
+.collection-field-table tbody tr td input::-webkit-input-placeholder{ color: #333;}
+.collection-field-table tbody tr td input:-moz-placeholder{  color:#333;} 　　
+.collection-field-table tbody tr td input::-moz-placeholder{  color:#333;} 　　
+.collection-field-table tbody tr td input:-ms-input-placeholder{ 　color:#333;}
+.group-input-radio{
+	display: inline-block;
+	width:14px;
+	height: 14px;
+	background: url(../../img/icon_unseleted.png) center center no-repeat;
+	vertical-align: middle;
+	margin-top: -2px;
+	cursor: pointer;
+}
+.group-input-radio.active{
+	background: url(../../img/icon_seleted.png) center center no-repeat;
+}
+.task-group-input input.collect-message-time,.task-group-input select.collect-message-time{
+	width:98px;
+}
+.collect-message .group-input-time-name{
+	padding-right: 4px;
+}
+.collect-message-input{
+	width:88%;
+	display: inline-block;
+	margin-left:58px;
+}
+.collect-message-input .task-group-input{
+	margin-bottom: 6px;
+}
+.collect-message-input .task-group-input-radio{
+	margin-top: 10px;
+	width: 100%;
+}
+.collect-message .task-list-name{
+	vertical-align: top;
+	margin-top: 9px;
+}
+.remarks .task-list-name{
+	vertical-align: top;
+	margin-top: 2px;
+}
+.group-input-hide{
+	margin-top: 12px;
+	display: none;
+}
+.task-group-input .task-group-textarea{
+	width:106%;
+	height: 81px;
+	margin-left:58px;
+	border-radius: 4px;
+	border: solid 1px #d9d9d9;
+}
+.save-btn{
+	width: 86px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #1890ff;
+	border-radius: 4px;
+	margin-left: 58px;
+	color:#fff;
+}
+.sysConfigure-content .save-btn{
+	margin-left: 103px;
+}
+.save-btn:hover{
+	cursor: pointer;
+	background: #0b64d8;
+}
+/*时间选择器样式调整*/
+.task-group-input .el-input__icon{
+	line-height:34px;
+}
+.el-date-editor .el-input__suffix{
+	right:14px;
+}
+.task-field-group-input .el-select{
+	width:100%;
+}
+.task-group-element .el-select{
+    display: block;
+}
+.task-group-input .el-select .el-input__suffix{
+	height: auto;
+}
+.task-group-input-element .el-input-number{
+    width:100px;
+    line-height: inherit;
+}
+.task-group-input-element .el-input-number.is-controls-right .el-input-number__decrease,.task-group-input-element .el-input-number.is-controls-right .el-input-number__increase{
+    line-height: 15px;
+}
+.task-group-input-element .el-select{
+    width:116px;
+}
+.group-input-hide input{
+    width:102%;
+}
+.field-table-name .el-input--suffix .el-input__inner,.field-table-name .el-select .el-input__inner{
+	padding-right: 0;
+}
+.field-table-name .el-input__suffix{
+	text-align: right;
+}
+/*时间选择器样式调整结束*/
+/*输入框样式调整*/
+.task-group-input .el-autocomplete{
+	width:100%;
+}
+.task-group-input input::-webkit-input-placeholder{
+	color:#c0c4cc;
+}
+.task-group-input input:-moz-placeholder{
+	color:#c0c4cc;
+} 　　
+  .task-group-input input::-moz-placeholder{
+	  color:#c0c4cc;
+  }
+.task-group-input input:-ms-input-placeholder{
+	  color:#c0c4cc;
+}
+.task-group-input input:hover,.task-group-input .task-group-textarea:hover{
+	border-color:#c0c4cc;
+}
+.task-group-input input:focus,
+.task-group-input .task-group-textarea:focus{
+	border-color:#409EFF;
+}
+/*输入框样式调整*/
+/*表格滚动设置*/
+.tbody{
+	max-height: 250px;
+}
+/*.tbody::-webkit-scrollbar {
+	display: none;
+}*/
+/*table tr th:nth-of-type(1),
+table tr td:nth-of-type(1)
+{
+	width: 96px;
+}
+
+ table tr th:nth-of-type(2),
+ table tr td:nth-of-type(2)
+{
+	width: 98px;
+}
+
+table tr th:nth-of-type(3),
+table tr td:nth-of-type(3)
+{
+	width: 110px;
+}
+
+table tr th:nth-of-type(4),
+table tr td:nth-of-type(4)
+{
+	width:68px;
+}
+
+table tr th:nth-of-type(5),
+table tr td:nth-of-type(5)
+{
+	width: 72px;
+
+}
+.table_field .el-input input[type='text']{
+	width: 140px;
+}
+.table_field .el-input input[type='text']{
+	width: 130px;
+}*/
+
+/*表格滚动设置*/

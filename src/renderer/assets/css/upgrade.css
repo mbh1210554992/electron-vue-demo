@@ -1,0 +1,76 @@
+.parameter{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.gradebox{
+    width: 100%;
+}
+.tips{
+    line-height: 24px;
+    margin-left: 20px;
+}
+.buttonbox{
+    margin-top: 14px;
+    margin-left: 68px;
+}
+.buttonbox span{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.on{
+    background:#228bf7;
+    color: white;
+    margin-right: 20px;
+}
+.cancel{
+    background-color: #e5e5e5;
+    border:1px solid #d1d1d1;
+}
+.buttonbox span:hover{
+    background:#228bf7;
+    color: #fff;
+    border: 1px solid #228bf7;
+}
+.barbox{
+    margin-top: 10px;
+}
+.barbox span{
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 13px;
+}
+.text{
+    width: 160px;
+    text-align: right;
+}
+.progressText{
+    width: 50px;
+    text-align: left;
+}
+.progressbar{
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+.fill {
+    width: 80px;
+    height: 20px;
+    background-color: #228bf7;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/** 窗体拖拽 */
+.drag{
+    -webkit-app-region: drag;
+}

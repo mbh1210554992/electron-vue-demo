@@ -1,0 +1,57 @@
+*{
+    font-family: "Microsoft YaHei";
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: "";
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+/*左浮动*/
+.fl {
+    float:left;
+}
+/*右浮动*/
+.fr {
+    float:right;
+}
+/*左对齐*/
+.tl{
+    text-align: left;
+}
+/*右对齐*/
+.tr{
+    text-align: right;
+}
+/*居中对齐*/
+.tc{
+    text-align: center;
+}
+/*input、textarea placeholder样式*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{ color: #999;font-size: 12px}
+input:-moz-placeholder,textarea:-moz-placeholder{  color:#999;font-size: 12px} 　　
+input::-moz-placeholder,textarea::-moz-placeholder{  color:#999;font-size: 12px} 　　
+input:-ms-input-placeholder,textarea:-ms-input-placeholder { 　color:#999;font-size: 12px}
+
+.el-table__body-wrapper {
+    overflow: hidden;
+    position: relative;
+}
